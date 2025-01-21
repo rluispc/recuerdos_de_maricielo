@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Recuerdos de Salvador">
+    <meta property="og:description" content="Descubre recuerdos especiales y momentos de Salvador.">
+    <!-- Asegúrate de usar la URL raw de la imagen -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/rluispc/recuerdos_de_salvador/main/baby.png">
+    <meta property="og:url" content="https://rluispc.github.io/recuerdos_de_salvador">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recuerdos de Salvador">
+    <meta name="twitter:description" content="Descubre recuerdos especiales y momentos de Salvador.">
+    <!-- Asegúrate de usar la URL raw de la imagen -->
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/rluispc/recuerdos_de_salvador/main/baby.png">
+    <meta name="twitter:url" content="https://rluispc.github.io/recuerdos_de_salvador">
+
+    <!-- Otros metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos de Salvador</title>
+    
+    <link rel="icon" href="baby.png" type="image/png" sizes="512x512">
+    <link rel="icon" href="baby.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="baby.png" type="image/png" sizes="16x16">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuerdos de Salvador</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Nunito:wght@400;700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(to bottom, #d4f0ff, #a8dff5);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #1e4a63;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Baloo 2', cursive;
+            font-size: 3em;
+            color: #1e81b0;
+            margin: 30px 0;
+        }
+        .menu {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Botones principales */
+        .menu-item > button {
+            background: #1e81b0;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1.2em;
+            font-family: 'Nunito', sans-serif;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-item > button:hover {
+            background: #145d84;
+        }
+        /* Subcategorías encerradas */
+        .submenu {
+            display: none;
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .submenu-item {
+            background: #e3f7ff;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        .submenu-item:hover {
+            background: #b9eaff;
+        }
+        .submenu-item a {
+            text-decoration: none;
+            color: #1e81b0;
+            font-weight: bold;
+        }
+        .submenu-item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleSubmenu(event) {
+            const currentSubmenu = event.currentTarget.nextElementSibling;
+            const allSubmenus = document.querySelectorAll('.submenu');
+            const allButtons = document.querySelectorAll('.menu-item > button');
+
+            allSubmenus.forEach(submenu => {
+                if (submenu !== currentSubmenu) submenu.style.display = 'none';
+            });
+
+            allButtons.forEach(button => {
+                if (button !== event.currentTarget) button.classList.remove('active');
+            });
+
+            if (currentSubmenu.style.display === 'block') {
+                currentSubmenu.style.display = 'none';
+                event.currentTarget.classList.remove('active');
+            } else {
+                currentSubmenu.style.display = 'block';
+                event.currentTarget.classList.add('active');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <h1>Recuerdos de Salvador</h1>
+        <!-- Revelación -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">🎉 Revelación</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/v/s!Amafr9pUVHtKg7AraiIDBYEQQs2JDg?e=sLhCbe" target="_blank">Invitación</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg7AszLLQLX_j_UAUSA?e=3EY9Rc" target="_blank">Videos</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg5BBy_8tqlOE7TB9GQ?e=QdTMEx" target="_blank">Fotos</a></div>
+            </div>
+        </div>
+        <!-- Baby Shower -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">🍼 Baby Shower</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/v/s!Amafr9pUVHtKg6dcY4qRut_v4a6QOA?e=GnLIDI" target="_blank">Invitación</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg7BKt9k7xnxfr0WpPg?e=ZNUEaE" target="_blank">Recuerdos</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/v/s!Amafr9pUVHtKg6BPXF3RDIAridfhuw?e=dnH9T2" target="_blank">Video</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg6AHLVWjTQTfWmYBbQ?e=Af23hI" target="_blank">Fotos</a></div>
+            </div>
+        </div>
+        <!-- En la barriga -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">🤰🏽 En la barriga</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg6thHzksqI84kF7iNg?e=00MnC5" target="_blank">Fotos</a></div>
+            </div>
+        </div>
+        <!-- Newborn -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">👶🏻 Newborn</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg6hxKknhalRwVvJqhA?e=nsvADe" target="_blank">Fotos</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/f/s!Amafr9pUVHtKg7B1niQl8OzuxOPPqw?e=GzBuon" target="_blank">... y más fotos</a></div>
+            </div>
+        </div>
+        <!-- Mesario -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">📅 Mesario</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg7ov48yv80Z5WfJaMg?e=OKhIl3" target="_blank">Mes 4</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg7BO34ZtMaPKScrqwQ?e=vgMQnM" target="_blank">Mes 3</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg7BNq1Z3zfz85VdCmw?e=8AAmoA" target="_blank">Mes 2</a></div>
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg7BMOlxJYuKIOqKFqA?e=cfYZFJ" target="_blank">Mes 1</a></div>             
+            </div>
+        </div>
+        <!-- Navidad -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)"> 🎄 Navidad</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg7Nk3pg6lyUK-hQrPg?e=ELvhmG" target="_blank">2024</a></div>                        
+            </div>
+        </div>
+        <!-- Fotos Fotos -->
+        <div class="menu-item">
+            <button onclick="toggleSubmenu(event)">📸 Muchas más Fotos...</button>
+            <div class="submenu">
+                <div class="submenu-item"><a href="https://1drv.ms/a/s!Amafr9pUVHtKg542Q9bta4PL9i8PiA?e=wqqLnQ" target="_blank">Fotos</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
